@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input, Text, Button, Card, CardBody, Spacer, CardFooter,Stack, HStack, Divider, Image, Heading, Box } from '@chakra-ui/react'
+import { Input, Text, Button, Card, Select, CardBody, Spacer, CardFooter,Stack, HStack, Divider, Image, Heading, Box } from '@chakra-ui/react'
 
 export default function SingleMedication() {
   return (
@@ -41,6 +41,11 @@ export default function SingleMedication() {
                         <Input placeholder='Credit Card' />
                         <Input placeholder='Name on Card' />
                         <Input placeholder='Address' />
+                        <Select placeholder='Select quantity'>
+                            <option value='option1'>1</option>
+                            <option value='option2'>2</option>
+                            <option value='option3'>3</option>
+                        </Select>
                     </Stack>
                 </CardBody>
                 <CardFooter>

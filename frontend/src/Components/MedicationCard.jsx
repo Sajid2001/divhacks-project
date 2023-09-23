@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Stack, Heading, Divider, ButtonGroup, Button, Image, Text, CardBody, CardFooter, HStack, Spacer } from '@chakra-ui/react'
+import { Card, Stack, Heading, Divider, Link, Button, Image, Text, CardBody, CardFooter, HStack, Spacer } from '@chakra-ui/react'
 
 
 export default function MedicationCard() {
@@ -19,7 +19,7 @@ export default function MedicationCard() {
       </Text>
       <HStack>
         <Text color='blue.600' fontSize='2xl'>
-            Retail Price: <strike>$450</strike>
+          <strike>Retail Price: $450</strike>
         </Text>
         <Spacer/>
         <Text color='blue.600' fontSize='2xl'>
@@ -32,7 +32,9 @@ export default function MedicationCard() {
   <CardFooter>
 
       <Button width={'full'} variant='solid' colorScheme='blue'>
+        <Link href='/medication/1'>
         Buy now!
+        </Link>
       </Button>
   </CardFooter>
 </Card>

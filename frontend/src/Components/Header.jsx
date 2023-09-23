@@ -28,14 +28,15 @@ const Header = () => {
         <div>
             <Flex bg='#1D3557'>
             <Box p='4' bg='blue.400'>
-                <Text fontWeight={'bold'} textColor={'white'} fontSize='3xl'>Cost Minus</Text>
+                <Text fontWeight={'bold'} textColor={'white'} fontSize='3xl'><Link href='/'>Cost Minus</Link></Text>
             </Box>
             <Spacer/>
             {isDesktop ? (
                 <Flex justify="space-between" flex="1">
                 <Spacer/>
                 <HStack spacing="3">
-                    
+                    <Button textColor={'white'} variant="tertiary"><Link href='/'>Home</Link></Button>
+                    <Button textColor={'white'} variant="tertiary"><Link href='/medications'>Medications</Link></Button>
                     <Button textColor={'white'} variant="tertiary"><Link href='/orders'>Orders</Link></Button>
                     <Button textColor={'white'} variant="tertiary"><Link href='/signin'>Sign in</Link></Button>
                     <Button textColor={'white'}  variant="primary"><Link href='/signup'>Sign Up</Link></Button>

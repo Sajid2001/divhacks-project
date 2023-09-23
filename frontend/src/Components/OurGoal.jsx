@@ -7,7 +7,7 @@ import {
     Text,
     Button,
     Image,
-    Icon,
+    Link,
     IconButton,
     createIcon,
     useColorModeValue,
@@ -57,7 +57,9 @@ import {
                 colorScheme={'blue'}
                 bg={'blue.400'}
                 _hover={{ bg: 'blue.500' }}>
+                  <Link href='/medications'>
                 Get started
+                </Link>
               </Button>
             </Stack>
           </Stack>
