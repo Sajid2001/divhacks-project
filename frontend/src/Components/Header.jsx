@@ -39,9 +39,7 @@ const Header = () => {
                     <Button textColor={'white'} variant="tertiary"><Link href='/medications'>Medications</Link></Button>
                     <Button textColor={'white'} variant="tertiary"><Link href='/orders'>Orders</Link></Button>
                     <Button textColor={'white'} variant="tertiary"><Link href='/signin'>Sign in</Link></Button>
-                    <Button textColor={'white'}  variant="primary"><Link href='/signup'>Sign Up</Link></Button>
-
-                   
+                    <Button textColor={'white'}  variant="primary"><Link href='/signup'>Sign Up</Link></Button>  
                 </HStack>
               </Flex>
             )

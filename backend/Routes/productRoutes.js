@@ -13,4 +13,15 @@ router.get('/',(req,res) => {
     });
 });
 
+router.get('/featured',(req,res) => {
+    ProductModel.find()
+    .limit(3)
+    .then(result =>{
+        res.json(result);
+    })
+    .catch(err =>{
+        console.log(err);
+    });
+});
+
 module.exports = router;

@@ -2,7 +2,7 @@ import { Card, Image, Stack, CardBody, Heading, CardFooter, Text } from '@chakra
 import React from 'react'
 
 
-export default function OrderCard() {
+export default function OrderCard({order}) {
   return (
     <Card
   direction={{ base: 'column', sm: 'row' }}
@@ -19,10 +19,10 @@ export default function OrderCard() {
 
   <Stack>
     <CardBody>
-      <Heading size='md'>Product Name</Heading>
+      <Heading size='md'>{order.name}</Heading>
 
       <Text py='2'>
-        This is one of the drugs of our time
+        {order.description}
       </Text>
     </CardBody>
 
