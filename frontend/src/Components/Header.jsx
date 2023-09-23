@@ -1,24 +1,48 @@
-import {  Flex,  IconButton, Spacer, Text, Box, useBreakpointValue, Menu, MenuButton, MenuList, MenuItem} from '@chakra-ui/react'
+import {
+    Box,
+    Button,
+    Spacer,
+    Container,
+    Text,
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+    Flex,
+    HStack,
+    IconButton,
+    useBreakpointValue,
+    Heading,
+  } from '@chakra-ui/react'
+  import { FiMenu } from 'react-icons/fi'
+  import { Link } from '@chakra-ui/react'
 
 const Header = () => {
 
     const isDesktop = useBreakpointValue({ base: false, lg: true })
 
 
+
     return (
         
         <div>
             <Flex bg='#1D3557'>
-            <Box p='4' bg='#457B9D'>
-                <Text fontSize='3xl'>Cost Minus</Text>
+            <Box p='4' bg='blue.400'>
+                <Text fontWeight={'bold'} textColor={'white'} fontSize='3xl'>Cost Minus</Text>
             </Box>
             <Spacer/>
             {isDesktop ? (
-                <Box p='4' bg='#457B9D'>
-                    <a href="/home"></a>
-                    <a href="/medication"></a>
-                    <a href="/orders"></a>
-                </Box>
+                <Flex justify="space-between" flex="1">
+                <Spacer/>
+                <HStack spacing="3">
+                    
+                    <Button textColor={'white'} variant="tertiary"><Link href='/orders'>Orders</Link></Button>
+                    <Button textColor={'white'} variant="tertiary"><Link href='/signin'>Sign in</Link></Button>
+                    <Button textColor={'white'}  variant="primary"><Link href='/signup'>Sign Up</Link></Button>
+
+                   
+                </HStack>
+              </Flex>
             )
             :(
             <Box p='4' bg='#457B9D'>
@@ -49,12 +73,6 @@ const Header = () => {
         }
         
         </Flex>
-        <Box h='300px' bg="#A8DADC">
-            
-        </Box>
-        <Box h='100px' bg="#457B9D">
-            
-        </Box>
         </div>
       )
     }
