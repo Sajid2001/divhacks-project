@@ -29,6 +29,10 @@ const OrderSchema = new mongoose.Schema({
         min: 6,
         max:255
     },
+    dateOrdered: {
+        type: Date,
+        default: Date.now
+      },
 
 })
 

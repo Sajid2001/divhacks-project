@@ -7,7 +7,7 @@ export default function MedicationGrid({medications}) {
     <div>
         <Grid margin={'20px'} templateColumns='repeat(3, 1fr)' gap={6}>
           {medications.map(medicine => (
-            <GridItem>
+            <GridItem key={medicine.name}>
               <MedicationCard medicine = {medicine}/>
             </GridItem>
           ))}

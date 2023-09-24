@@ -13,6 +13,7 @@ router.get('/',(req,res) => {
     });
 });
 
+
 router.get('/featured',(req,res) => {
     ProductModel.find()
     .limit(3)
@@ -23,5 +24,17 @@ router.get('/featured',(req,res) => {
         console.log(err);
     });
 });
+
+router.get('/:id', (req, res) => {
+    const productId = req.params.id;
+    ProductModel.findById(productId) 
+      .then(result =>{
+        res.json(result);
+        })
+        .catch(err =>{
+            console.log(err);
+        });
+  });
+
 
 module.exports = router;

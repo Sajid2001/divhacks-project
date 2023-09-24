@@ -24,10 +24,9 @@ useEffect(()=> {
 
     return (  
         <div>
-            <TopBar heading={'Orders'}/>
-
+            <TopBar heading={'Your Orders'}/>
             {orders && 
-            <Stack justify={'center'} align={'center'} gap={3} marginY={4}>
+            <Stack justify={'center'} align={'center'} gap={3} marginY={20}>
                 {orders.map(order => (
                     <OrderCard order = {order}/>
                 ))}

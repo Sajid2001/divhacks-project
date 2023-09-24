@@ -8,6 +8,7 @@ import Home from './Pages/Home';
 import SingleMedication from './Pages/SingleMedication';
 import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
+import Footer from './Components/Footer';
 
 
 
@@ -28,6 +29,7 @@ function App() {
             <Route path='/signup' element={<SignUp/>}/>
         </Routes>
       </BrowserRouter>
+      <Footer/>
       </div>
     </>
   )

@@ -3,6 +3,7 @@ import {
     Button,
     Spacer,
     Container,
+    Image,
     Text,
     Menu,
     MenuButton,
@@ -26,9 +27,10 @@ const Header = () => {
     return (
         
         <div>
-            <Flex bg='#1D3557'>
-            <Box p='4' bg='blue.400'>
-                <Text fontWeight={'bold'} textColor={'white'} fontSize='3xl'><Link href='/'>Cost Minus</Link></Text>
+            <Flex bg='blue.400'>
+            <Box flexDir={'row'} display={'flex'} p='4' bg='blue.400'>
+                <Text fontWeight={'bold'} textColor={'white'} fontSize='3xl'><Link href='/'>Cost Minus Drugs</Link></Text>
+                <Image borderRadius={'xl'} marginLeft={3} height={'12'} src = {'https://static.vecteezy.com/system/resources/thumbnails/005/386/380/small/drug-logo-health-logo-vector.jpg'}/>
             </Box>
             <Spacer/>
             {isDesktop ? (
