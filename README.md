@@ -1,5 +1,5 @@
 # Cost Minus
-A revolutionary pharmacy app that provides affordable access to prescription drugs.
+## A revolutionary pharmacy app that provides affordable access to prescription drugs.
 
 ## 💡 Inspiration
 The problem with prescription drugs costing too much lies in its impact on accessibility and affordability of healthcare. High drug prices can lead to financial burdens on patients, forcing some to forgo essential medications, potentially worsening their health. Additionally, it strains healthcare systems and insurance providers, increasing overall healthcare costs. Exorbitant drug prices often result from complex factors like patents, lack of competition, and opaque pricing structures, making it challenging to address the issue effectively. Addressing the high cost of prescription drugs is crucial to ensure equitable access to healthcare and to alleviate the financial stress on individuals and healthcare systems alike.
