@@ -1,4 +1,4 @@
-# Cost Minus
+# Cost Minus Drugs
 ## A revolutionary pharmacy app that provides affordable access to prescription drugs.
 
 ## 💡 Inspiration
