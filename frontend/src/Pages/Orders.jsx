@@ -1,4 +1,4 @@
-import { Stack } from "@chakra-ui/react";
+import { Stack, Text } from "@chakra-ui/react";
 import TopBar from "../Components/TopBar";
 import OrderCard from "../Components/OrderCard";
 import { useState, useEffect } from "react";
@@ -31,6 +31,10 @@ useEffect(()=> {
                     <OrderCard order = {order}/>
                 ))}
             </Stack>
+            }
+            {
+                orders.length === 0 &&
+                <Text fontSize={'3xl'} textAlign={'center'} fontWeight={'bold'}> It appears you have not ordered anything yet...</Text>
             }
         </div>
     );
