@@ -14,4 +14,4 @@ We all had the most experience in full stack development, making us lean towards
 One of our main challenges was getting comfortable with using creating a UI so quickly. Most of our team had never been to a Hacakthon before, so there was a learning curve involved in getting comfortable creating the site quickly, and figuring out what would be feasible given the time restraints. Overall we're super proud of how we fared with this enw challenge.
 
 ## ✅ Accomplishments that we're proud of
-We're very happy with the website that we created. The research we did in creating it was probably the most rewarding part of the processs because we know that with the proper data (much of which is difficult to obtain), the site can become operationalized easily and millions of people will benefit.
+We're very happy with the website that we created. The research we did in creating it was probably the most rewarding part of the processs because we know that with the proper data (much of which is difficult to obtain), the site can become operationalized and millions of people will benefit.
